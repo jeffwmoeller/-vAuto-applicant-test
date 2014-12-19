@@ -1,0 +1,14 @@
+﻿<Window x:Class="NumeronymCreator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Numeronymization Utility" Height="429.105" Width="525">
+    <Grid>
+        <StackPanel>
+            <Label Content="Enter a sentence, then click NUMERONYMIZE." Margin="36,32,36,10" VerticalAlignment="Top"/>
+            <TextBox x:Name="Input" Margin="36,0,36,10" TextWrapping="Wrap" VerticalAlignment="Top" Height="100"/>
+            <Button Content="NUMERONYMIZE" HorizontalAlignment="Center" Margin="36,10" VerticalAlignment="Top" RenderTransformOrigin="0.51,0.996" Click="Button_Click"/>
+            <Label Content="Your numeronymized sentence:" HorizontalAlignment="Left" Margin="36,10" VerticalAlignment="Top"/>
+            <TextBlock x:Name="Output" Height="100" Margin="36,0,36,10" TextWrapping="Wrap" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"/>
+        </StackPanel>
+    </Grid>
+</Window>
